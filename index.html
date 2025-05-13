@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebGL Sphere</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <div id="dynamic-sliders"></div>
+
+      <select id="shapeSelector">
+        <option value="cube">Cube</option>
+        <option value="sphere">Sphere</option>
+        <option value="ellipsoid">Ellipsoid</option>
+        <option value="hyperboloid">Hyperboloid</option>
+        <option value="toroid">Toroid</option>
+        <option value="cone">Cone</option>
+        <option value="cylinder">Cylinder</option>
+      </select>
+
+      <div><label for="wireframeToggle">Wireframe</label> <input type="checkbox" id="wireframeToggle" /></div>
+      <input type="color" id="colorPicker" value="#00FF6E" />
+    </div>
+
+    <canvas id="glcanvas"></canvas>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
